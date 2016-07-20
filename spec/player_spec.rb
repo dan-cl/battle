@@ -17,12 +17,8 @@ let(:player_2) {described_class.new('Dos')}
     end
   end
 
-  describe '#attack' do
-    it 'deducts hp from opponent' do
-      expect(player_2).to receive(:deduct_hp)
-      subject.attack(player_2)
-    end
-  end
+
+  
 
   describe '#deduct_hp' do
     it 'reduces hp by 10' do
