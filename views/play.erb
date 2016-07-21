@@ -3,14 +3,15 @@
   <body>
 <center>
 
-<h1>  <%= @player_1_name %> vs. <%= @player_2_name %> </h1>
+<h1>  <%= @player_1_name.name %> vs. <%= @player_2_name.name %> </h1>
 
 <player1sprite>
  <iframe src="http://pldh.net/media/pokemon/gen5/back/059.png" width="50%" height="50%" frameBorder="0" allowFullScreen></iframe><a  </a>
 </player1sprite>
 
 <player1HP>
-<%= @player_1_name%>: 60HP
+<%= @player_1_name.name%>: <%=@player_1_name.hp%>HP
+<%= @player_2_name.name%>: <%=@player_2_name.hp%>HP
 </player1HP>
 
 <form action="/attack">
