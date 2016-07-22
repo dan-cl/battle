@@ -1,3 +1,10 @@
+
+<HEAD>
+<TITLE>Computer</TITLE>
+<META HTTP-EQUIV="refresh" CONTENT="3;URL=/comp_attack">
+</HEAD>
+
+
 <link rel='stylesheet' type='text/css' href='style.css'/>
 
   <body>
@@ -13,21 +20,3 @@
 <%= @game.player_1.name%>: <%=@game.player_1.hp%>HP
 <%= @game.player_2.name%>: <%=@game.player_2.hp%>HP
 </player1HP>
-
-<form action="/attack">
-  <player1attack>
-  <input type="submit" value="Attack">
-</player1attack>
-</form>
-
-<form action="/paralyse">
-  <player2attack>
-  <input type="submit" value="Paralyse!">
-</player2attack>
-</form>
-</center>
-</body>
-
-
-
-<a [href=""/attack"]{display: none} </a>

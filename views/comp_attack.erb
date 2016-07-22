@@ -1,0 +1,13 @@
+
+
+
+
+<% if @game.last_attack == @game.attack %>
+
+<%= @game.players.first.name %> attacked <%= @game.players.last.name %>
+<META HTTP-EQUIV="refresh" CONTENT="3;URL=/play">
+<% else %>
+
+<%= @game.players.first.name %> paralysed <%= @game.players.last.name %>
+<META HTTP-EQUIV="refresh" CONTENT="3;URL=/compplay">
+<% end %>

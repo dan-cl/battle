@@ -10,7 +10,7 @@ player1sprite {
   position: absolute;
   right:1200px;
   bottom:100px;
-  
+
 
 }
 
@@ -32,6 +32,11 @@ nav2 {
 player1attack {
 position: absolute;
 right:1600px;
+bottom:350px;
+}
+player2attack {
+position: absolute;
+left:1600px;
 bottom:350px;
 }
 player1HP {

@@ -27,15 +27,33 @@ class BattleMon < Sinatra::Base
 
  get '/attack' do
    @game.attack
+   @game.switch
    redirect '/winner'if @game.game_over?
+   #redirect '/attack' if @game.current_player == @game.player_2
    erb :attack
+ end
 
+ get '/paralyse' do
+   @game.paralyse
+   @game.switch
+   redirect '/winner'if @game.game_over?
+   #redirect '/attack' if @game.current_player == @game.player_2
+   erb :paralyse
  end
 
  get '/winner' do
    erb :winner
  end
 
+get '/compplay' do
+  erb :compplay
+end
+
+get '/comp_attack' do
+  @game.computer_attack
+  @game.switch
+  erb :comp_attack
+end
 
 
 
